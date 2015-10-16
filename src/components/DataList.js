@@ -3,7 +3,7 @@ import DataListOption from './DataListOption'
 
 export default class DataList extends React.Component {
     render() {
-        let options = this.props.options.map((option, index) => {
+        var options = this.props.options.map((option, index) => {
             return <DataListOption 
                         key={option+index}
                         option={option} 

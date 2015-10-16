@@ -20,7 +20,10 @@
     "react",
     "react-component"
   ],
-  "author": "Asbjorn Enge <asbjorn@hanafjedle.net>",
+  "author": {
+    "name": "Asbjorn Enge",
+    "email": "asbjorn@hanafjedle.net"
+  },
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/asbjornenge/react-datalist/issues"
@@ -55,5 +58,27 @@
     "nanodom": "0.0.3",
     "stylusify": "^1.0.0",
     "testdom": "^1.0.1"
-  }
+  },
+  "gitHead": "b59d599409de31206bd73ce2504d8df7b979b520",
+  "_id": "react-datalist@2.0.0",
+  "_shasum": "8c6e09e0f083572fcaa754ed5988ca257a8bf68e",
+  "_from": "react-datalist@",
+  "_npmVersion": "2.5.1",
+  "_nodeVersion": "0.12.0",
+  "_npmUser": {
+    "name": "asbjornenge",
+    "email": "asbjorn@asbjornenge.com"
+  },
+  "maintainers": [
+    {
+      "name": "asbjornenge",
+      "email": "asbjorn@asbjornenge.com"
+    }
+  ],
+  "dist": {
+    "shasum": "8c6e09e0f083572fcaa754ed5988ca257a8bf68e",
+    "tarball": "http://registry.npmjs.org/react-datalist/-/react-datalist-2.0.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/react-datalist/-/react-datalist-2.0.0.tgz"
 }

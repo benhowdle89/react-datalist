@@ -64,8 +64,12 @@ export default class ReactDataList extends React.Component {
     }
     handleInputKeyDown(event) {
         switch(event.which) {
+            case 9: 
             case 40:
                 // DOWN Arrow
+                if(event.which == 9){
+                    event.preventDefault();
+                }
                 var newSelectedIndex  = this.state.selected === false ? 0 : this.state.selected + 1
                 var availableOptions  = this.filterOptions(this.props.options, this.state.filter, this.useNative())
                 if (newSelectedIndex >= availableOptions.length) newSelectedIndex = availableOptions.length - 1
