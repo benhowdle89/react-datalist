@@ -102,6 +102,7 @@ export default class ReactDataList extends React.Component {
                 })
                 break
         }
+        if (typeof this.props.onKeyUp === 'function') this.props.onKeyUp(event)
     }
     filterOptions(options, filter, support) {
         if (support)        return options
