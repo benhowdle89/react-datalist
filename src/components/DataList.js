@@ -10,7 +10,8 @@ export default class DataList extends React.Component {
                         index={index} 
                         useNative={this.props.useNative} 
                         selected={this.props.selected == index} 
-                        select={this.props.select} />
+                        select={this.props.select}
+                        ref={option+index} />
         })
         var containerStyle = {}
         if (!this.props.useNative) {
