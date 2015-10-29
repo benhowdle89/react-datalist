@@ -167,15 +167,6 @@ export default class ReactDataList extends React.Component {
         }.bind(this),50)
 
     }
-    componentWillReceiveProps(props) {
-        if(props.selected){
-            var selected = this.props.options[props.selected],
-                option = React.findDOMNode(this.refs[selected + props.selected]),
-                el = React.findDOMNode(this);
-
-            el.scrollTop = option.offsetTop;
-        }
-    }
     findPos(element) {
       if (element) {
         var parentPos = this.findPos(element.offsetParent);

@@ -2,6 +2,17 @@ import React          from 'react'
 import DataListOption from './DataListOption'
 
 export default class DataList extends React.Component {
+
+    componentWillReceiveProps(props) {
+        if(props.selected){
+            var selected = this.props.options[props.selected],
+                option = React.findDOMNode(this.refs[selected + props.selected]),
+                el = React.findDOMNode(this);
+
+            el.scrollTop = option.offsetTop;
+        }
+    }
+
     render() {
         var options = this.props.options.map((option, index) => {
             return <DataListOption 
