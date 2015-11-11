@@ -39,6 +39,7 @@ export default class ReactDataList extends React.Component {
                     options={options}
                     selected={this.state.selected}
                     useNative={this.useNative()}
+                    heightOfAnswers={this.props.heightOfAnswers}
                 />
             </div>
         )

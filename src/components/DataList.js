@@ -24,7 +24,9 @@ export default class DataList extends React.Component {
                         select={this.props.select}
                         ref={option+index} />
         })
-        var containerStyle = {}
+        var containerStyle = {
+            maxHeight: this.props.heightOfAnswers
+        }
         if (!this.props.useNative) {
             if (this.props.hide) containerStyle.display = 'none'
             else if (this.props.options.length == 0) containerStyle.display = 'none'
