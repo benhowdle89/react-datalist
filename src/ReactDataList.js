@@ -1,7 +1,7 @@
 import React          from 'react'
 import DataList       from './components/DataList'
 import DataListOption from './components/DataListOption'
-var layout = '.react-datalist {\n  margin: 0 !important;\n  border: 1px solid #a1c1e7;\n  max-height: 500px;\n  overflow-x: scroll;\n  background-color: #fff;\n}\n.react-datalist .react-datalist-option {\n  display: block;\n  margin: 0 !important;\n  width: 94%;\n  padding: 3%;\n  cursor: pointer;\n}\n.react-datalist .react-datalist-option:hover {\n  background-color: #bad4fe;\n}\n.react-datalist .react-datalist-option.react-datalist-option-selected {\n  background-color: #bad4fe;\n}\n';
+var layout = '.react-datalist {\n  margin: 0 !important;\n  border: 1px solid #a1c1e7;\n  max-height: 500px;\n  overflow-x: scroll;\n  background-color: #fff;\n}\n.react-datalist .react-datalist-option {\n  display: block;\n  margin: 0 !important;\n  padding: 3%;\n  cursor: pointer;\n}\n.react-datalist .react-datalist-option:hover {\n  background-color: #bad4fe;\n}\n.react-datalist .react-datalist-option.react-datalist-option-selected {\n  background-color: #bad4fe;\n}\n';
 
 export default class ReactDataList extends React.Component {
     constructor(props) {
